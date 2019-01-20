@@ -15,9 +15,12 @@
           <div class="form-group">
 
               <label for="email">Email</label>
-              <textarea class="form-control" id="email" [(NgModel)]="newUser.email" email= ></textarea>
+              <textarea class="form-control" id="email" [(NgModel)]="newUser.email" name="email" #email="ngModel" required></textarea>
               
+              <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                  <p> Email is Required</p>
           </div>
+        </div>
           <button type="submit" class="btn btn-success btn-lg">Add User</button>
       </form>
   </div>
