@@ -1,3 +1,24 @@
-<p>
-  user-form works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <form #userForm='ngForm'>
+      
+          <div class="form-group">
+
+              <label for="name">Name</label>
+              <input type="text" required class="form-control" id="name" [(ngModel)]="newUser.name" name="name" #name="ngModel">
+               Display {{newUser.name}}
+
+               <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                  <p> Name is Required</p>
+
+          </div>
+          <div class="form-group">
+
+              <label for="email">Email</label>
+              <textarea class="form-control" id="email" [(NgModel)]="newUser.email" email= ></textarea>
+              
+          </div>
+          <button type="submit" class="btn btn-success btn-lg">Add User</button>
+      </form>
+  </div>
+</div>
