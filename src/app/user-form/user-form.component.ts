@@ -8,7 +8,7 @@ import {User} from '../user';
 })
 export class UserFormComponent implements OnInit {
 
-  newUser= new User (0,"","");
+  newUser= new User (0,"",0,0,0);
 
   constructor() { }
 
