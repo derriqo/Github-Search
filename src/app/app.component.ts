@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {User} from 'src/app/user';
+import {User} from './user';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +7,6 @@ import {User} from 'src/app/user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  users:string[];
-  
-  // users= [
-  //   new User(1,'Derrick')
-  // ]
   }
   
 
