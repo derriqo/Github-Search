@@ -1,16 +1,20 @@
- <div class="jumbotron">
+ <div class="jumbotron jumbotron-fluid">
  <h1>
     Github-Search
   </h1>
+ </div>
   <div class="container">
       <div class="row">
           <app-user-form>(addUser)="addNewUser($event)"</app-user-form>
       </div>
+
       <div class="row">
-          <p>Name:{{user.login}}</p>
-          <p>Public:{{user.public_repos}}</p>
-          <p>Follower:{{user.followers}}</p>
-          <p>Following:{{user.following}}</p>
+           <div class="col-md-4">
+            <div><strong>Name:</strong> {{user.login}}</div>
+            <div><strong>Repositories:</strong>{{user.public_repos}}</div>
+            <div><strong>Follower:</strong>{{user.followers}}</div>
+            <div><strong>Following:</strong>{{user.following}}</div>
+           </div> 
       </div>
   </div>
 </div>

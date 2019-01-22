@@ -4,7 +4,7 @@
       
           <div class="form-group">
 
-              <label for="name">User Name</label>
+              <label for="name"><strong>User Name</strong></label>
               <input type="text" required class="form-control" id="name" [(ngModel)]="newUser.name" name="name" #name="ngModel">
 
                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
