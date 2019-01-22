@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../user';
 import {HttpClient} from '@angular/common/http';
-import { NodeCompatibleEventEmitter } from 'rxjs/internal/observable/fromEvent';
+
 import {UserRequestService} from '../user-http/user-request.service'
 
 
@@ -12,8 +12,9 @@ import {UserRequestService} from '../user-http/user-request.service'
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  // userDetails="";
   user:User;
-  users:User[];   
+  // users:User[];   
   
   constructor(private http:HttpClient,private userService:UserRequestService) {}
 
@@ -23,7 +24,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
 
-    this.userService.userRequest();
+    this.userService.userRequest("derriqo");
     this.user=this.userService.user;
 
 }

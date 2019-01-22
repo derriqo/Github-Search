@@ -2,22 +2,22 @@ import {Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {environment}from '../../environments/environment'
 import {User} from '../user';
-// import {resolve} from 'path';
-// import {reject} from 'q';
+import {Repository} from '../repository'
 
 
 @Injectable()
 export class UserRequestService {
-
+  // userDetails="";
   user:User;
-  users:User[];   
-  userid=0;
+  // users:User[];   
+
 
   constructor(private http:HttpClient) {
     this.user = new User (0,'',0,0,0)
    }
 
-  userRequest(){
+  userRequest(username:string){
+    if (username!=""){
     interface ApiResponse{
       login:string;
       public_repos:number;
@@ -26,7 +26,7 @@ export class UserRequestService {
     }
   
     let promise =new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>(environment.apiUrl+"derriqo"+environment.token).toPromise().then(response=>{
+      this.http.get<ApiResponse>(environment.apiUrl+username+environment.token).toPromise().then(response=>{
         this.user.login=response.login
         this.user.public_repos=response.public_repos
         this.user.followers=response.followers
@@ -35,18 +35,14 @@ export class UserRequestService {
         resolve()
       },
       
-      error=>{
-       this.user.login="sorry. project failed. error.."
-      //  this.user.public_repos=0
-
-
-       reject(error)
+      error=>{reject(error)
       } 
     )
   })
-
-  return promise
+  return promise;
+}
   
-  }
+  
+}
 
 }

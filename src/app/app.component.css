@@ -1,3 +1,10 @@
-h1{
+
+.link{
+    /* background-color: blueviolet; */
+    display:inline;
+    margin-left:30px;
+    
+}
+.jumbotron{
     text-align: center;
 }
