@@ -7,10 +7,9 @@ import {Repository} from '../repository'
 
 @Injectable()
 export class UserRequestService {
-  // userDetails="";
-  user:User;
-  // users:User[];   
 
+  user:User;
+     
 
   constructor(private http:HttpClient) {
     this.user = new User (0,'',0,0,0)

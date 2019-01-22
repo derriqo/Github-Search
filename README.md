@@ -32,7 +32,7 @@ To run this project, please follow the following instructions.
 **User Story**
 As a user I want to be able to create quotes and be able to vote on whether they are terrible or inspirational.
 | Inputs|Outputs|User Behavior|
-|-------|-------|-------------|
+|-------|-------|-------------------------------------------------------------------------|
 |Enter username in Form| Data Validation occurs | User inputs details in the Search Field |
 | Submit button | Sends user input to display area | User views input |
 |   Repository Display | Displays user repositories | User is directed to the Github page |

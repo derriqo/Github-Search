@@ -13,9 +13,7 @@ export class UserFormComponent implements OnInit {
   user:User;
   display=false;
   @Output() addUser=new EventEmitter<User>();
-  // submitUser(){
-  //   this.addUser.emit(this.newUser);
-  // }
+  
 constructor(private userService:UserRequestService){}
   showUser(){
     this.display=true;

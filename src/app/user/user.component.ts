@@ -12,9 +12,9 @@ import {UserRequestService} from '../user-http/user-request.service'
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  // userDetails="";
+  
   user:User;
-  // users:User[];   
+    
   
   constructor(private http:HttpClient,private userService:UserRequestService) {}
 
