@@ -18,10 +18,6 @@ export class UserComponent implements OnInit {
   
   constructor(private http:HttpClient,private userService:UserRequestService) {}
 
-  addNewUser(user){
-    this.users.push(user)
-  }
-
   ngOnInit() {
 
     this.userService.userRequest("derriqo");
