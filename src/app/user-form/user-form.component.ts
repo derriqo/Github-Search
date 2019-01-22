@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
 import {User} from '../user';
 
 @Component({
@@ -9,6 +9,11 @@ import {User} from '../user';
 export class UserFormComponent implements OnInit {
 
   newUser= new User (0,"",0,0,0);
+  
+  @Output() addUser=new EventEmitter<User>();
+  submitUser(){
+    this.addUser.emit(this.newUser);
+  }
 
   constructor() { }
 

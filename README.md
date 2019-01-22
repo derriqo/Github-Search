@@ -1,27 +1,62 @@
-# GithubSearch
+# GITHUBSEARCH
 
+
+# Table of contents
+***
+* [General Info](#General-Info)
+* [Technologies](#Technologies)
+* [Setup](#Setup)
+* [Behavior Driven Technologies](#Behavior-Driven-Technologies)
+* [Support](#Support)
+* [Bugs](#Bugs)
+* [Creator](#Creator)
+
+
+## General info
+---
+GithubSearch is an application where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories
+The application allows the user to:
+
+* Search for a Particular GitHub username.
+
+* See names and description of a person's public repositories.
+
+
+## Technologies
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
-## Development server
+## Setup
+---
+To run this project, please follow the following instructions.
+-   Get access to the internet
+-   Sign into your github pages. Set up would require access to github pages. This would require membership and access to the Derriqo repository.
+-   Search for derriqo on the github pages and select the Quotes repository.
+-   Git-hub Webpage is linked to the title of the file.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Behavior Driven Development
+---
 
-## Code scaffolding
+**User Story**
+As a user I want to be able to create quotes and be able to vote on whether they are terrible or inspirational.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Inputs|Outputs|User Behavior|
+|-------|-------|-------------|
+|Enter username in Form| Data Validation occurs | User inputs details in the various fields |
+| Submit button | Sends user input to display area | User views input |
+|   Vote button | Displays the vote count | User feeling about various quotes|
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Support and contact details
+---
+For any inquiries, please reach out to williamderrick100@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Bugs
+---
+None at the moment, but would love to hear your feedback!
 
-## Running end-to-end tests
+## Creator
+---
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Created by Derrick William.
