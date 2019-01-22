@@ -12,7 +12,7 @@
 * [Creator](#Creator)
 ## General info
 ---
-GithubSearch is an application where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories
+GithubSearch is an application where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. 
 The application allows the user to:
 * Search for a Particular GitHub username.
 * See names and description of a person's public repositories.
@@ -26,6 +26,7 @@ To run this project, please follow the following instructions.
 -   Sign into your github pages. Set up would require access to github pages. This would require membership and access to the Derriqo repository.
 -   Search for derriqo on the github pages and select the Quotes repository.
 -   Git-hub Webpage is linked to the title of the file.
+**Here is the link to derriqo*https://github.com/derriqo/Github-Search 
 ## Behavior Driven Development
 ---
 **User Story**
