@@ -1,4 +1,3 @@
-<ng-progress></ng-progress>
  <div class="jumbotron">
  <h1>
     Github-Search
@@ -6,6 +5,12 @@
   <div class="container">
       <div class="row">
           <app-user-form>(addUser)="addNewUser($event)"</app-user-form>
+      </div>
+      <div class="row">
+          <p>Name:{{user.login}}</p>
+          <p>Public:{{user.public_repos}}</p>
+          <p>Follower:{{user.followers}}</p>
+          <p>Following:{{user.following}}</p>
       </div>
   </div>
 </div>

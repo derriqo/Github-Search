@@ -26,7 +26,7 @@ export class UserRequestService {
     }
   
     let promise =new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
+      this.http.get<ApiResponse>(environment.apiUrl+"derriqo"+environment.token).toPromise().then(response=>{
         this.user.login=response.login
         this.user.public_repos=response.public_repos
         this.user.followers=response.followers

@@ -23,15 +23,9 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
 
-    interface ApiResponse{
-      login:string;
-      public_repos:number;
-      followers:number;
-      following:number;
+    this.userService.userRequest();
+    this.user=this.userService.user;
 
-      
-    }
-    
 }
 
 }
